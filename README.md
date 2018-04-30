@@ -1,10 +1,10 @@
-# TICTACTOE MINIMAX AI
+# TicTacToe Minimax AI
 
 Compile with:
 	
 	make tictactoe
 
-##Project Goals
+## Project Goals
 I had a number of goals in mind when writing this project:
 
 1. Impliment the miniMax algorithm successfully.
@@ -14,14 +14,14 @@ a terminal window.
 by using self documentation principles, good control flow, and
 appropriate comments.
 
-##Additional Notes
+## Additional Notes
 The main code for the tic tac toe game I downloaded from:
 http://www.cppforschool.com/project/tic-tac-toe-project.html
 I have edited parts of the code so that it can properly interface
 with my min/max algorithm and to improve UI.
 
-##Future improvements
-*Recreate the code in python or java to more easily integrate it onto
+## Future improvements
+* Recreate the code in python or java to more easily integrate it onto
 a website.
-*Allow user to decide which symbol they would like to be.
-*Add an element of randomness to the AI's behavior, allow for 
+* Allow user to decide which symbol they would like to be.
+* Add an element of randomness to the AI's behavior, allow for
