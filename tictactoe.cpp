@@ -233,11 +233,13 @@ void printBoard(const vector<char>& board)
 }
 
 /*******************************************************************
-				END OF PROJECT
+					END OF STANDARD PROJECT
+				  BEGIN MINIMAX IMPLEMENTATION
 ********************************************************************/
 
 
 // Returns the best possible move for the AI
+// Input: board by ref
 int determineNextMove(vector<char>& board)
 {
 	int currentBestMove;
@@ -270,8 +272,9 @@ int determineNextMove(vector<char>& board)
 	return currentBestMove;
 }
 
-// Recursive function which calculates scores based off of boardstate
-// by recursing through every possible state and 
+// Recursive function which calculates scores based off of board state
+// by recursing through every possible state
+// INPUTS: board by ref, playerTurn++, depth++ 
 int getFutureScoreOfBoard(vector<char>& board, int playerTurn, int depth)
 {
 	// BASE CASE (checks to see if anyone has won)
@@ -350,6 +353,7 @@ int getFutureScoreOfBoard(vector<char>& board, int playerTurn, int depth)
 
 // Returns true if move is valid, else false
 // Note, function does not change contents of board
+// INPUT: board by ref, int move
 bool isMoveValid(const vector<char>& board, int move)
 {
 	// Outside of board range
